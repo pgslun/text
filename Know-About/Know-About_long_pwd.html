@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html style="font-size: 24px">
+<head>
+    <title>知乎</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/Know-about.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
+		<link rel="shortcut icon" href="img/log.ico" />
+		<style type="text/css">
+    
+        #cont,#cont3 {
+           
+        /*    display: flex;*/
+            align-items: center;
+            justify-content: center;
+         
+            font-size: 2rem
+        }
+        #wrap article {
+        	position: relative;
+        }
+        #wrap article aside{
+        	box-sizing: border-box;
+        	width: 100%;
+        	position: absolute;
+        	bottom: 0px;
+        }
+        #wrap article #cont3 ul {
+		    display: flex;
+		    flex-wrap: wrap;
+		    margin-top: 20px;
+		}
+		#wrap article #cont3 ul li{
+			width: 100%;
+
+		}
+    </style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<img src="img/log.png" alt="知乎">
+		</header>
+		<article>
+		<section id="cont3">
+			<nav>
+				<a href="./Know-About_long.html" id="phone">免密码登陆</a>
+				<a href="./Know-About_long_pwd.html" id="pwd">密码登陆</a>
+			</nav>	
+			<ul>
+				<li><input type="text" name="" placeholder="手机号或邮箱"></li>
+				<li><input type="password" name="" placeholder="密码"></li>
+				<li><a href="">海外手机号登陆</a><a href="">忘记密码？</a></li>
+				<li><input type="submit" name="" value="注册/登陆"></li>
+			</ul>
+		</section>	
+			<section id="cont2">
+				<h2>扫码登陆</h2>
+				<div>
+					<img src="img/there-max.jpg" alt="">
+				</div>
+				<p>打开 <a href="">知乎 App</a></p>
+				<p>在「我的」页面右上角打开扫一扫</p>
+
+			</section>
+			
+			<img src="img/there-m-.jpg" id="show" alt="维码">
+			<img src="img/login.jpg" id="show2"  alt="登陆">
+			<aside id="aside">
+				<p>未注册手机验证后自动登陆</p>
+				<p>注册既代表同意<a href="">《知乎协议》</a><a href="">《隐私保护指引》</a></p>
+				<a href="">注册机构号</a>
+			</aside>
+		</article>
+		<nav>
+			<span>社交账号登陆</span>
+			<ul>
+				<li><a href="">微信</a></li>
+				<li><a href="">QQ</a></li>
+				<li><a href="">微博</a></li>
+			</ul>				
+		</nav>
+		<bottom type="button" class="btn">	
+			<img src="img/zh.jpg" alt="">
+			<a href="">下载知乎 App</a>	
+		</bottom>
+		<footer>
+			<p>
+				<a href="">知乎专栏</a>
+				<a href="">圆桌</a>
+				<a href="">发现</a>
+				<a href="">移动应用</a>
+				<a href="">联系我们</a>
+				<a href="">来知乎工作</a>
+				<a href="">注册机构号</a>
+			</p>
+			<p>
+				<span>&copy;2019 知乎</span>
+				<a href="">京 ICP 证 110745号</a>
+				<a href=""><img src="img/icon.png" alt="">京公网安备 11010802010035 号</a>
+				<a href="">出版物经营许可证</a>
+			</p>
+			<p>
+				<span>侵权举报</span>
+				<a href="">网上有害信息举报专区</a>
+				<a href="">儿童色情信息举报专区</a>
+				<span>违法和不良信息举报：010-82716601</span>
+			</p>
+		</footer>
+		<a href=""><img src="img/feedback.jpg" alt=""></a>
+	</div>
+    
+<script type="text/javascript">
+	var show=document.querySelector('#show');
+	var show2=document.querySelector('#show2');
+	var phone=document.querySelector('#phone');
+	var pwd=document.querySelector('#pwd');
+
+	 // if (document.getElementById('show').style.display === 'block' || document.getElementById('show').style.display !== '') {
+	 // 	 document.getElementById('show2').style.display = 'block'
+	 // 	 document.getElementById('show').style.display = 'none'
+	 // }
+
+
+    show.onclick=function () {         
+        document.getElementById('show').style.display = 'none'
+        document.getElementById('show2').style.display = 'block'
+        document.getElementById('cont3').style.display = 'none'
+        document.getElementById('cont2').style.display = 'block'
+        // document.getElementById('aside').style.display = 'none'
+  
+    }
+    show2.onclick=function () {
+      	document.getElementById('show2').style.display = 'none'
+      	document.getElementById('show').style.display = 'block'
+
+      	document.getElementById('cont2').style.display = 'none'
+      	document.getElementById('cont3').style.display = 'block'
+      	// document.getElementById('aside').style.display = 'block'
+
+    }  
+</script>
+</body>
+</html>
