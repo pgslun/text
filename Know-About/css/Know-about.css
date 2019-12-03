@@ -73,7 +73,7 @@ body{
     font-size: 16px;
     line-height: 60px;
     padding-bottom: 0;
-	padding-left:20px; 
+	margin-left:20px; 
 	font-family: '黑体';
 	border-bottom:none;
 }
@@ -382,11 +382,11 @@ color: #8590a6;
 
 #wrap article #cont3 {
 	/*display: block;*/
-	padding: 20px;
+	padding: 0 20px 20px 20px;
 }
 #wrap article #cont3 li{
 	box-sizing: border-box;
- 	height: 53px;
+ 	height: 52px;
 	
 }
 #wrap article #cont3 li:nth-of-type(-n+2){

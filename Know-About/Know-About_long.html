@@ -26,24 +26,25 @@
 		<article>
 			<section id="cont">
 				<nav>
-					<a href="./Know-About_long.html" id="phone">免密码登陆</a>
-					<a href="./Know-About_long_pwd.html" id="pwd">密码登陆</a>
+					<a href="#" id="phone">免密码登陆</a>
+					<a href="#" id="pwd">密码登陆</a>
 				</nav>	
-				<ul id="ull">
-					<li><select>
-						<option value ="China">中国 +86</option>
-						<option value="audi">中国香港 +852</option>
-						<option value ="USA">美国 +1</option>
-						<option value="Japan">日本 +81</option>
-						
-					</select>
-					<i></i>
-					<i></i></li>
-					<li><span></span><input type="text" name="" placeholder="手机号" title="请输入手机号码"> </li>
-					<li><input type="text" name="" placeholder="输入6位短信验证码" title="请输入手机号码"><a href="">获取验证码</a></li>
-					<li><a href="">接收语音验证码</a></li>
-					<li><input type="submit" name="" value="注册/登陆"></li>
-				</ul>
+					<ul id="ull">
+						<li><select>
+							<option value ="China">中国 +86</option>
+							<option value="audi">中国香港 +852</option>
+							<option value ="USA">美国 +1</option>
+							<option value="Japan">日本 +81</option>
+							
+						</select>
+						<i></i>
+						<i></i></li>
+						<li><span></span><input type="text" name="" placeholder="手机号" title="请输入手机号码"> </li>
+						<li><input type="text" name="" placeholder="输入6位短信验证码" title="请输入手机号码"><a href="">获取验证码</a></li>
+						<li><a href="">接收语音验证码</a></li>
+						<li><input type="submit" name="" value="注册/登陆"></li>
+					</ul>
+			
 			</section>
 			<section id="cont2">
 				<h2>扫码登陆</h2>
@@ -54,6 +55,15 @@
 				<p>在「我的」页面右上角打开扫一扫</p>
 
 			</section>
+			<section id="cont3">
+				
+				<ul id="ul3">
+					<li><input type="text" name="" placeholder="手机号或邮箱"></li>
+					<li><input type="password" name="" placeholder="密码"></li>
+					<li><a href="">海外手机号登陆</a><a href="">忘记密码？</a></li>
+					<li><input type="submit" name="" value="注册/登陆"></li>
+				</ul>
+			</section>	
 			<img src="img/there-m-.jpg" id="show" alt="维码">
 			<img src="img/login.jpg" id="show2"  alt="登陆">
 			<aside id="aside">
@@ -104,14 +114,29 @@
 	var show=document.querySelector('#show');
 	var show2=document.querySelector('#show2');
 	var phone=document.querySelector('#phone');
-	var pwd=document.querySelector('#pwd');
-
-	 // if (document.getElementById('show').style.display === 'block' || document.getElementById('show').style.display !== '') {
-	 // 	 document.getElementById('show2').style.display = 'block'
-	 // 	 document.getElementById('show').style.display = 'none'
-	 // }
+	var pwd=document.getElementById('pwd');
 
 
+	 document.getElementById('cont3').style.display = 'none'
+
+	 phone.onclick=function(){
+		pwd.style.cssText=	'font-size: 16px;font-weight:400;border-bottom:none';
+		
+		phone.style.cssText=
+		'color:#000;padding-bottom:20px;font: 20px/30px "微软雅黑";font-weight:bold;border-bottom: 3px solid #0084ff;';
+		document.getElementById('ul3').style.display = 'none'
+		document.getElementById('ull').style.display = 'flex'
+	 }
+
+	 pwd.onclick=function(){
+		pwd.style.cssText=
+		'color:#000;padding-bottom:20px;font: 20px/30px "微软雅黑";font-weight:bold;border-bottom: 3px solid #0084ff;';
+		phone.style.cssText=
+		'font-size: 16px;font-weight:400;border-bottom:none';
+		document.getElementById('ull').style.display = 'none'
+		document.getElementById('cont3').style.display = 'block'
+		document.getElementById('ul3').style.display = 'block'
+	 }
     show.onclick=function () {         
         document.getElementById('show').style.display = 'none'
         document.getElementById('show2').style.display = 'block'
@@ -119,6 +144,7 @@
         document.getElementById('cont2').style.display = 'block'
         document.getElementById('aside').style.display = 'none'
         document.getElementById('cont3').style.display = 'none'
+				document.getElementById('ull').style.display = 'flex'
     }
     show2.onclick=function () {
       	document.getElementById('show2').style.display = 'none'
@@ -127,7 +153,9 @@
       	document.getElementById('cont2').style.display = 'none'
       	document.getElementById('cont').style.display = 'block'
       	document.getElementById('aside').style.display = 'block'
+
       	document.getElementById('cont3').style.display = 'none'
+				// document.getElementById('ul3').style.display = 'none'
     }  
 </script>
 </body>

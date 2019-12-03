@@ -68,7 +68,7 @@
 		width: 360px;
 	}
 	#wrap article #cont nav>a:last-child,#wrap article #cont3 nav>a:first-child{
-		padding-left: 20px;
+		margin-left: 20px;
 	}
 	#wrap article #cont li select{
 		width: 95px;
@@ -94,7 +94,7 @@
 		width: 400px;
 	}
 	#wrap article #cont nav>a:last-child,#wrap article #cont3 nav>a:first-child{
-		padding-left: 20px;
+		margin-left: 20px;
 	}
 	#wrap article #cont li select{
 		width: 95px;
