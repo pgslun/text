@@ -238,6 +238,8 @@ li{list-style: none;}
 
 #wrap .sec_ul li div img{
 	width: 100%;
+	height: 80%;
+
 }
 #wrap .sec_ul li div p:nth-of-type(2) .cdb389{
 		color: #fff;
